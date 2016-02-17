@@ -20,7 +20,7 @@ app.get('/about', middleware.requireAuthentication, function(request, response){
 });
 
 app.use(express.static(__dirname + '/public'));
-//console.log(__dirname);
+
 
 app.listen(portNumber, function(){
 	console.log('Server started on port ' + portNumber + '.');
