@@ -6,7 +6,7 @@ var portNumber = process.env.PORT || 3000;
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAuthentication, function(request, response){
-	response.send('About meh!');
+	response.send('About meh~ow!');
 });
 
 app.use(express.static(__dirname + '/public'));
